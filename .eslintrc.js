@@ -27,5 +27,13 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false,
+      },
+    ],
   },
 };
